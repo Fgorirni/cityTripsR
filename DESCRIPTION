@@ -1,0 +1,25 @@
+Package: cityTripsR
+Type: Package
+Title: Tools for Exploring and Summarizing City Travel Data
+Version: 0.1.0
+Authors@R:
+    person("Federico", "Gorrini", 
+           email = "fgorrini@usf.edu", 
+           role = c("aut", "cre"))
+Description: 
+    cityTripsR provides simple tools to explore and summarize travel data.
+    The package includes functions for calculating trip durations, comparing
+    average costs across cities, exploring travel ratings, filtering trips,
+    and creating basic travel visualizations. It is designed for analysis and clear documentation.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 4.0.0)
+Imports:
+    ggplot2
+Suggests:
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.3

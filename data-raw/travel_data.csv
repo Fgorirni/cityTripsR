@@ -1,0 +1,7 @@
+trip_id,city,country,start_date,end_date,total_cost,flight_cost,lodging_cost,activities_cost,rating,travel_type
+1,New York,USA,2025-01-03,2025-01-08,1500,400,700,400,5,friends
+2,Paris,France,2025-03-10,2025-03-17,2200,700,1100,400,4,solo
+3,Tokyo,Japan,2025-04-22,2025-05-01,3000,1200,1300,500,5,family
+4,Miami,USA,2025-06-05,2025-06-10,900,150,500,250,3,solo
+5,London,UK,2025-07-12,2025-07-18,2100,650,1000,450,4,couple
+6,Barcelona,Spain,2025-09-01,2025-09-07,1800,500,900,400,5,friends

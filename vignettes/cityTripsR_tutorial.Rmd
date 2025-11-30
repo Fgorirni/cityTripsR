@@ -1,0 +1,83 @@
+---
+title: "cityTripsR Tutorial"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{cityTripsR Tutorial}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+# Introduction
+
+The cityTripsR package is a small R package that helps summarize and explore simple travel data. This RMarkdown shows how to load the dataset included in the package and how to use each of the functions:
+
+- `trip_duration()`
+- `avg_cost_by_city()`
+- `avg_rating_by_travel_type()`
+- `filter_trips()`
+- `plot_cost_by_city()`
+- the S3 summary function `trip_summary()`
+
+All examples use the built-in dataset travel_data.
+
+# Load the Package and Data
+
+```{r}
+library(cityTripsR)
+
+# load the dataset
+data(travel_data)
+
+# view first rows
+travel_data
+```
+
+# Calculate Trip Durations
+
+```{r}
+trip_duration(travel_data)
+```
+
+# Average Cost by City
+
+```{r}
+avg_cost_by_city(travel_data)
+```
+
+# Average Rating by Travel Type
+
+```{r}
+avg_rating_by_travel_type(travel_data)
+```
+
+# Filtering Trips
+
+```{r}
+filter_trips(travel_data, min_cost = 2000)
+
+filter_trips(travel_data, min_cost = 2000, min_rating = 5)
+```
+
+# Plotting: Average Cost by City
+
+```{r}
+plot_cost_by_city(travel_data)
+```
+
+# S3 Summary: trip_summary()
+
+```{r}
+ts <- trip_summary(travel_data)
+ts
+```
+
+# Conclusion
+
+The cityTripsR package provides simple tools for exploring and summarizing travel data. This RMarkdown showed how to load the dataset, calculate trip durations, compute averages, filter the data, create a plot, and generate a full trip summary using the S3 class system.
