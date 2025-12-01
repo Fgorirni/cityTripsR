@@ -1,0 +1,26 @@
+{
+    "id": "74F24875",
+    "path": "~/GitHub/cityTripsR/data-raw/travel_data.csv",
+    "project_path": "data-raw/travel_data.csv",
+    "type": "text",
+    "hash": "2444011449",
+    "contents": "",
+    "dirty": false,
+    "created": 1764557400451.0,
+    "source_on_save": false,
+    "relative_order": 1,
+    "properties": {
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "23,2",
+        "scrollLine": "2"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1764557528,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1764557528409,
+    "read_only": false,
+    "read_only_alternatives": []
+}
